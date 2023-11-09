@@ -1,38 +1,77 @@
 .App {
-  text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.showPopup {
+    align-self: flex-end;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Popup Inside */
+.insidePopup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.insidePopup header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.insidePopup header h2 {
+    font-weight: 300;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.insidePopup header h4 {
+    font-weight: 400;
+    color: rgb(33,114,238);
+}
+
+.mainColors > * {
+    margin: 20px 0px;
+}
+
+.popupButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.popupButtons button {
+    margin-top: 40px;
+    width: 100px;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.popupButtons button:first-child {
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.disable {
+    background-color: gray !important;
+    cursor: not-allowed !important;
+
+}
+
+.popupButtons .activeSave {
+    background-color: #2072EF !important;
+    color: white;
 }

@@ -1,0 +1,27 @@
+.name {
+    font-size: 18px;
+    font-family: serif;
+    color: gray;
+}
+
+.formColor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left__formColor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+
+.left__formColor label {
+    text-transform: uppercase;
+}
+
+.left__formColor input {
+    width: 60px;
+    height: 30px;
+    border: none;
+}
